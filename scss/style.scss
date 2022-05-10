@@ -1,0 +1,159 @@
+// ---- ---- fonts ---- ---- //
+@font-face {
+  font-family: "sf-pro-display";
+  src: url("../fonts/SF-Pro-Display-Regular.woff2") format("woff2"),
+    url("../fonts/SF-Pro-Display-Regular.woff") format("woff");
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "sf-pro-display";
+  src: url("../fonts/SF-Pro-Display-Bold.woff2") format("woff2"),
+    url("../fonts/SF-Pro-Display-Bold.woff") format("woff");
+  font-style: normal;
+  font-weight: bold;
+  font-display: swap;
+}
+@font-face {
+  font-family: "spaceagecyrillic";
+  src: url("../fonts/spaceagecyrillic-regular.woff2") format("woff2"),
+    url("../fonts/spaceagecyrillic-regular.woff") format("woff");
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+}
+
+// ---- ---- colors ---- ---- //
+$color_main: #fff;
+$color_hover: #cb0e0e;
+
+// ---- ---- **** ---- ---- //
+
+// ---- ---- **** ---- ---- //
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  font-family: "sf-pro-display";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  color: $color_main;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+button {
+  border: none;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+}
+
+// ---- ---- main ---- ---- //
+.container {
+  max-width: 1220px;
+  padding: 0px 10px;
+  margin: 0 auto;
+}
+.header {
+  background-image: url(../images/bg/bg_header.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+  }
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 75px 0px 30px;
+  }
+  &__content {
+    max-width: 600px;
+  }
+  &__title {
+    font-family: "spaceagecyrillic";
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    span {
+      font-size: 110px;
+    }
+  }
+  &__text {
+    font-size: 24px;
+    line-height: 29px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+  }
+  &__btn {
+    font-size: 24px;
+    line-height: 29px;
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%;
+    border: 1px solid $color_main;
+    padding: 15px 10px 16px;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      color: $color_hover;
+      border: 1px solid $color_hover;
+    }
+  }
+  &__description {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 40px;
+    margin-bottom: 5%;
+  }
+  &__description-text {
+    width: 165px;
+    font-size: 14px;
+    line-height: 17px;
+
+    & + .header__description-text {
+      margin-left: 52px;
+    }
+  }
+}
+.menu {
+  &__list {
+    display: flex;
+  }
+  &__item {
+    margin-right: 30px;
+  }
+  &__link {
+    font-size: 18px;
+    line-height: 21px;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+    &:hover {
+      color: $color_hover;
+    }
+  }
+}
+.phone {
+  display: block;
+  font-size: 24px;
+  line-height: 29px;
+  margin-left: auto;
+}
+.login {
+  margin-left: 22px;
+  margin-right: 134px;
+}
