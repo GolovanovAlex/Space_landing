@@ -111,7 +111,7 @@ button {
     width: 100%;
     border: 1px solid $color_main;
     padding: 15px 10px 16px;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.6s ease-in-out;
     &:hover {
       color: $color_hover;
       border: 1px solid $color_hover;
@@ -144,7 +144,7 @@ button {
     font-size: 18px;
     line-height: 21px;
     text-transform: uppercase;
-    transition: color 0.3s ease;
+    transition: color 0.5s ease;
     &:hover {
       color: $color_hover;
     }
@@ -173,7 +173,7 @@ button {
   font-size: 18px;
   line-height: 21px;
   padding: 20px 45px;
-  transition: all 0.3s ease;
+  transition: all 0.5s ease;
   &:hover {
     color: $color_hover;
     border: 1px solid $color_hover;
@@ -262,5 +262,38 @@ button {
     line-height: 14px;
     color: #e5e5e5;
     margin-top: 20px;
+  }
+}
+.stars {
+  background-image: url(../images/bg/bg_stars.jpg);
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 100px;
+
+  &__box {
+    text-align: center;
+    circle,
+    text,
+    foreignObject {
+      font-size: 18px;
+      text-align: left;
+      transition: all 0.5s ease-in-out;
+      cursor: pointer;
+    }
+    &--right-text p {
+      text-align: right;
+    }
+    g:hover circle {
+      r: 20px;
+      fill: $color_hover;
+    }
+    g:hover text,
+    g:hover foreignObject {
+      font-size: 26px;
+      line-height: 26px;
+      fill: $color_hover;
+      color: $color_hover;
+    }
   }
 }
