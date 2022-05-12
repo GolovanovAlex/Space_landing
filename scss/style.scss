@@ -392,6 +392,78 @@ button {
       width: 100%;
     }
   }
-
-  margin-bottom: 500px;
+}
+.special-services {
+  padding-bottom: 200px;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__box-list {
+    width: 620px;
+    margin-right: 80px;
+  }
+  &__list-title {
+    font-size: 25px;
+    line-height: 29px;
+    margin-bottom: 25px;
+  }
+  &__list {
+    list-style: none;
+    margin-bottom: 25px;
+  }
+  &__list-item {
+    position: relative;
+    font-size: 24px;
+    line-height: 29px;
+    padding-left: 36px;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 4px;
+      left: 0;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background-color: $color_main;
+    }
+  }
+  &__caption {
+    font-size: 12px;
+    line-height: 14px;
+    color: $color_grey;
+  }
+  &__buttons {
+    width: 500px;
+    img {
+    }
+  }
+  &__btn {
+    width: 100%;
+  }
+  &__btn--first {
+    position: relative;
+    margin-bottom: 50px;
+    &::before {
+      content: "";
+      position: absolute;
+      right: 0;
+      bottom: 41px;
+      background-image: url(../images/icon/spaceman.png);
+      width: 192px;
+      height: 150px;
+    }
+  }
+}
+.slider {
+  &__inner {
+  }
+  &__box {
+  }
+  &__box-item {
+  }
+  &__box-img {
+  }
+  &__description {
+  }
 }
