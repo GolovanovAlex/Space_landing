@@ -323,3 +323,39 @@ button {
   fill: #036cca;
   color: #036cca;
 }
+
+.spaceman {
+  background-image: url(../images/bg/bg_spaceman.jpg);
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+.spaceman .title {
+  max-width: 576px;
+}
+.spaceman__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.spaceman__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 100px;
+}
+.spaceman__text {
+  max-width: 165px;
+  font-size: 14px;
+  line-height: 17px;
+}
+.spaceman__text + .spaceman__text {
+  margin-left: 53px;
+}

@@ -297,3 +297,31 @@ button {
     }
   }
 }
+
+.spaceman {
+  background-image: url(../images/bg/bg_spaceman.jpg);
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  .title {
+    max-width: 576px;
+  }
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 100px;
+  }
+  &__text {
+    max-width: 165px;
+    font-size: 14px;
+    line-height: 17px;
+    & + & {
+      margin-left: 53px;
+    }
+  }
+}
