@@ -39,6 +39,10 @@ a {
   text-decoration: none;
 }
 
+ul {
+  list-style: none;
+}
+
 button {
   font-family: "sf-pro-display";
   border: none;
@@ -250,9 +254,6 @@ button {
       -ms-flex-pack: justify;
           justify-content: space-between;
   font-family: "sf-pro-display";
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 19px;
   margin-bottom: 50px;
 }
 .about__content-text p {
@@ -453,7 +454,6 @@ button {
   margin-bottom: 25px;
 }
 .special-services__list {
-  list-style: none;
   margin-bottom: 25px;
 }
 .special-services__list-item {
@@ -615,4 +615,43 @@ button {
       -ms-flex-pack: end;
           justify-content: flex-end;
   margin-left: auto;
+}
+
+.footer {
+  background-image: url(../images/bg/bg_footer.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  padding: 100px 0 150px;
+}
+.footer__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.footer__text {
+  width: 165px;
+  margin-right: 51px;
+}
+.footer__text p + p {
+  margin-top: 50px;
+}
+.footer__menu {
+  width: 120px;
+  margin-right: 100px;
+}
+.footer__links {
+  width: 165px;
+}
+.footer__item, .footer__links-item {
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  -webkit-transition: color 0.4s ease;
+  transition: color 0.4s ease;
+}
+.footer__item:hover, .footer__links-item:hover {
+  color: #036cca;
 }

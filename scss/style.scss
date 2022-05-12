@@ -51,6 +51,9 @@ a {
   color: inherit;
   text-decoration: none;
 }
+ul {
+  list-style: none;
+}
 button {
   font-family: "sf-pro-display";
   border: none;
@@ -183,8 +186,6 @@ button {
   }
 }
 
-.main {
-}
 .about {
   background-image: url(../images/bg/bg_content.jpg);
   background-position: center;
@@ -225,9 +226,6 @@ button {
     display: flex;
     justify-content: space-between;
     font-family: "sf-pro-display";
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 19px;
     margin-bottom: 50px;
     p {
       width: 165px;
@@ -408,7 +406,6 @@ button {
     margin-bottom: 25px;
   }
   &__list {
-    list-style: none;
     margin-bottom: 25px;
   }
   &__list-item {
@@ -434,8 +431,6 @@ button {
   }
   &__buttons {
     width: 500px;
-    img {
-    }
   }
   &__btn {
     width: 100%;
@@ -464,8 +459,7 @@ button {
   &__box {
     position: relative;
   }
-  &__box-item {
-  }
+
   &__box-img {
     margin: 0 auto;
   }
@@ -508,8 +502,6 @@ button {
     line-height: 29px;
     margin-bottom: 80px;
   }
-  &__form {
-  }
   &__form-input {
     width: 100%;
     background-color: transparent;
@@ -543,5 +535,39 @@ button {
     display: flex;
     justify-content: flex-end;
     margin-left: auto;
+  }
+}
+.footer {
+  background-image: url(../images/bg/bg_footer.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  padding: 100px 0 150px;
+  &__inner {
+    display: flex;
+    justify-content: flex-end;
+  }
+  &__text {
+    width: 165px;
+    margin-right: 51px;
+    p + p {
+      margin-top: 50px;
+    }
+  }
+  &__menu {
+    width: 120px;
+    margin-right: 100px;
+  }
+  &__links {
+    width: 165px;
+  }
+  &__item,
+  &__links-item {
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    transition: color 0.4s ease;
+    &:hover {
+      color: $color_hover;
+    }
   }
 }
