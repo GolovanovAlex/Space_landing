@@ -1,24 +1,24 @@
 // ---- ---- fonts ---- ---- //
 @font-face {
-  font-family: "sf-pro-display";
-  src: url("../fonts/SF-Pro-Display-Regular.woff2") format("woff2"),
-    url("../fonts/SF-Pro-Display-Regular.woff") format("woff");
+  font-family: 'sf-pro-display';
+  src: url('../fonts/SF-Pro-Display-Regular.woff2') format('woff2'),
+    url('../fonts/SF-Pro-Display-Regular.woff') format('woff');
   font-style: normal;
   font-weight: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "sf-pro-display";
-  src: url("../fonts/SF-Pro-Display-Bold.woff2") format("woff2"),
-    url("../fonts/SF-Pro-Display-Bold.woff") format("woff");
+  font-family: 'sf-pro-display';
+  src: url('../fonts/SF-Pro-Display-Bold.woff2') format('woff2'),
+    url('../fonts/SF-Pro-Display-Bold.woff') format('woff');
   font-style: normal;
   font-weight: bold;
   font-display: swap;
 }
 @font-face {
-  font-family: "spaceagecyrillic";
-  src: url("../fonts/spaceagecyrillic-regular.woff2") format("woff2"),
-    url("../fonts/spaceagecyrillic-regular.woff") format("woff");
+  font-family: 'spaceagecyrillic';
+  src: url('../fonts/spaceagecyrillic-regular.woff2') format('woff2'),
+    url('../fonts/spaceagecyrillic-regular.woff') format('woff');
   font-style: normal;
   font-weight: normal;
   font-display: swap;
@@ -41,7 +41,7 @@ $color_black: #010203;
   box-sizing: border-box;
 }
 body {
-  font-family: "sf-pro-display";
+  font-family: 'sf-pro-display';
   font-size: 16px;
   font-weight: 400;
   line-height: 19px;
@@ -55,7 +55,7 @@ ul {
   list-style: none;
 }
 button {
-  font-family: "sf-pro-display";
+  font-family: 'sf-pro-display';
   border: none;
   background: transparent;
   color: inherit;
@@ -92,7 +92,7 @@ button {
     max-width: 600px;
   }
   &__title {
-    font-family: "spaceagecyrillic";
+    font-family: 'spaceagecyrillic';
     font-size: 60px;
     line-height: 60px;
     font-weight: 400;
@@ -156,6 +156,38 @@ button {
     }
   }
 }
+.menu-burger {
+  display: none;
+  width: 40px;
+  height: 30px;
+  padding: 0;
+  position: relative;
+  z-index: 20;
+  span {
+    display: block;
+    position: relative;
+    height: 2px;
+    background-color: $color_main;
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      display: block;
+      width: 40px;
+      height: 2px;
+      background-color: $color_main;
+      cursor: pointer;
+    }
+    &::before {
+      top: -12px;
+    }
+    &::after {
+      top: 12px;
+    }
+  }
+}
+
 .phone {
   display: block;
   font-size: 24px;
@@ -167,7 +199,7 @@ button {
   margin-right: 134px;
 }
 .title {
-  font-family: "spaceagecyrillic";
+  font-family: 'spaceagecyrillic';
   font-size: 48px;
   font-weight: 400;
   line-height: 48px;
@@ -207,14 +239,14 @@ button {
     width: 600px;
   }
   &__content-title {
-    font-family: "sf-pro-display";
+    font-family: 'sf-pro-display';
     font-size: 30px;
     font-weight: 700;
     line-height: 36px;
     margin-bottom: 5px;
   }
   &__content-subtitle {
-    font-family: "sf-pro-display";
+    font-family: 'sf-pro-display';
     font-size: 12px;
     font-weight: 400;
     line-height: 14px;
@@ -225,7 +257,7 @@ button {
   &__content-text {
     display: flex;
     justify-content: space-between;
-    font-family: "sf-pro-display";
+    font-family: 'sf-pro-display';
     margin-bottom: 50px;
     p {
       width: 165px;
@@ -370,7 +402,7 @@ button {
       color: $color_grey;
       margin-bottom: 16px;
       &::before {
-        content: "";
+        content: '';
         position: absolute;
         width: 68px;
         height: 2px;
@@ -414,7 +446,7 @@ button {
     line-height: 29px;
     padding-left: 36px;
     &::before {
-      content: "";
+      content: '';
       position: absolute;
       top: 4px;
       left: 0;
@@ -439,7 +471,7 @@ button {
     position: relative;
     margin-bottom: 50px;
     &::before {
-      content: "";
+      content: '';
       position: absolute;
       right: 0;
       bottom: 41px;
@@ -464,7 +496,7 @@ button {
     margin: 0 auto;
   }
   &__description {
-    font-family: "spaceagecyrillic";
+    font-family: 'spaceagecyrillic';
     font-size: 24px;
     line-height: 30px;
   }
@@ -507,14 +539,14 @@ button {
     background-color: transparent;
     border: none;
     border-bottom: 1px solid $color_main;
-    font-family: "sf-pro-display";
+    font-family: 'sf-pro-display';
     font-size: 14px;
     line-height: 17px;
     color: $color_main;
     padding: 20px 0;
     margin-bottom: 30px;
     &::placeholder {
-      font-family: "sf-pro-display";
+      font-family: 'sf-pro-display';
       font-size: 14px;
       line-height: 17px;
       color: $color_main;
@@ -571,3 +603,75 @@ button {
     }
   }
 }
+
+// ---- ---- 1024 ---- ---- //
+@media (max-width: 1024px) {
+  .login {
+    margin-right: 0;
+  }
+}
+// ---- ---- 900 ---- ---- //
+@media (max-width: 900px) {
+  .header {
+    background-position: center right;
+    &__top {
+      padding-top: 30px;
+    }
+    &__content {
+      margin: 0 auto;
+    }
+    &__description {
+      justify-content: center;
+    }
+  }
+  .menu {
+    &__list {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+      text-align: center;
+      background-color: $color_black;
+      padding-top: 30px;
+      padding-bottom: 20px;
+      transition: all 0.5s ease-out;
+      transform: translateY(-150%);
+      .active {
+        transform: translateY(0);
+      }
+    }
+    &__item {
+      padding: 12px 0;
+    }
+    &__link {
+      display: block;
+    }
+  }
+  .menu-burger {
+    display: block;
+  }
+  .active {
+    transform: translateY(0);
+  }
+  .phone,
+  .login {
+    position: relative;
+    z-index: 20;
+  }
+}
+// ---- ---- 620 ---- ---- //
+@media (max-width: 900px) {
+  .header__title {
+    font-size: 34px;
+    span {
+      font-size: 60px;
+    }
+  }
+}
+
+// ---- ---- media ---- ---- //
+// ---- ---- media ---- ---- //
+// ---- ---- media ---- ---- //
+// ---- ---- media ---- ---- //
