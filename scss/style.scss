@@ -662,16 +662,75 @@ button {
   }
 }
 // ---- ---- 620 ---- ---- //
-@media (max-width: 900px) {
-  .header__title {
-    font-size: 34px;
-    span {
-      font-size: 60px;
+@media (max-width: 620px) {
+  .header {
+    background-position: -600px;
+    &__content {
+      text-align: center;
+    }
+    &__title {
+      font-size: 34px;
+      line-height: 40px;
+      span {
+        font-size: 60px;
+        line-height: 30px;
+      }
+    }
+
+    &__text {
+      display: block;
+    }
+    &__btn {
+      max-width: 80%;
+    }
+  }
+
+  .menu {
+    &__list {
+      padding-top: 70px;
     }
   }
 }
 
-// ---- ---- media ---- ---- //
-// ---- ---- media ---- ---- //
+// ---- ---- 500 ---- ---- //
+@media (max-width: 500px) {
+  .header {
+    background-position: -750px;
+    &__title {
+      text-align: center;
+    }
+    &__btn {
+      max-width: 90%;
+    }
+  }
+}
+
+// ---- ---- 360 ---- ---- //
+@media (max-width: 360px) {
+  .phone {
+    font-size: 16px;
+  }
+  .header {
+    background-position: -900px;
+    &__title {
+      font-size: 30px;
+      line-height: 30px;
+      span {
+        font-size: 50px;
+        line-height: 30px;
+      }
+    }
+    &__text {
+      font-size: 20px;
+    }
+    &__btn {
+      font-size: 22px;
+    }
+    &__description-text + &__description-text {
+      margin-left: 25px;
+    }
+  }
+}
+
 // ---- ---- media ---- ---- //
 // ---- ---- media ---- ---- //

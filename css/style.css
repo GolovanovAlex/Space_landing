@@ -750,11 +750,66 @@ button {
     z-index: 20;
   }
 }
-@media (max-width: 900px) {
+@media (max-width: 620px) {
+  .header {
+    background-position: -600px;
+  }
+  .header__content {
+    text-align: center;
+  }
   .header__title {
     font-size: 34px;
+    line-height: 40px;
   }
   .header__title span {
     font-size: 60px;
+    line-height: 30px;
+  }
+  .header__text {
+    display: block;
+  }
+  .header__btn {
+    max-width: 80%;
+  }
+
+  .menu__list {
+    padding-top: 70px;
+  }
+}
+@media (max-width: 500px) {
+  .header {
+    background-position: -750px;
+  }
+  .header__title {
+    text-align: center;
+  }
+  .header__btn {
+    max-width: 90%;
+  }
+}
+@media (max-width: 360px) {
+  .phone {
+    font-size: 16px;
+  }
+
+  .header {
+    background-position: -900px;
+  }
+  .header__title {
+    font-size: 30px;
+    line-height: 30px;
+  }
+  .header__title span {
+    font-size: 50px;
+    line-height: 30px;
+  }
+  .header__text {
+    font-size: 20px;
+  }
+  .header__btn {
+    font-size: 22px;
+  }
+  .header__description-text + .header__description-text {
+    margin-left: 25px;
   }
 }
