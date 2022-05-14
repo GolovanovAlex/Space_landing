@@ -612,6 +612,10 @@ button {
     display: flex;
     justify-content: flex-end;
   }
+  &__box {
+    display: flex;
+    justify-content: flex-end;
+  }
   &__text {
     width: 165px;
     margin-right: 51px;
@@ -895,6 +899,8 @@ button {
     }
   }
   .contact {
+    padding-bottom: 0;
+
     &__box {
       width: 100%;
       max-width: 500px;
@@ -913,6 +919,32 @@ button {
     &__info-text {
       font-size: 20px;
       line-height: 22px;
+    }
+  }
+  .footer {
+    &__inner {
+      display: block;
+    }
+    &__text {
+      width: 100%;
+      margin-bottom: 40px;
+      p {
+        margin-bottom: 15px;
+      }
+      p + p {
+        margin-top: 0;
+      }
+    }
+
+    &__box {
+      justify-content: space-around;
+    }
+    &__menu {
+      margin-right: 0;
+    }
+
+    &__links {
+      width: auto;
     }
   }
 }
@@ -1088,6 +1120,16 @@ button {
       &__btn--first {
         font-size: 16px;
       }
+    }
+  }
+  .footer {
+    &__menu {
+      font-size: 14px;
+      line-height: 18px;
+    }
+    &__links {
+      font-size: 14px;
+      line-height: 18px;
     }
   }
 }

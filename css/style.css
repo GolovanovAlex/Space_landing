@@ -698,6 +698,14 @@ button {
       -ms-flex-pack: end;
           justify-content: flex-end;
 }
+.footer__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
 .footer__text {
   width: 165px;
   margin-right: 51px;
@@ -995,6 +1003,9 @@ button {
     width: 100%;
   }
 
+  .contact {
+    padding-bottom: 0;
+  }
   .contact__box {
     width: 100%;
     max-width: 500px;
@@ -1013,6 +1024,30 @@ button {
   .contact__info-text {
     font-size: 20px;
     line-height: 22px;
+  }
+
+  .footer__inner {
+    display: block;
+  }
+  .footer__text {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .footer__text p {
+    margin-bottom: 15px;
+  }
+  .footer__text p + p {
+    margin-top: 0;
+  }
+  .footer__box {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .footer__menu {
+    margin-right: 0;
+  }
+  .footer__links {
+    width: auto;
   }
 }
 @media (max-width: 500px) {
@@ -1168,5 +1203,14 @@ button {
   }
   .special .special-services__btn--first {
     font-size: 16px;
+  }
+
+  .footer__menu {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .footer__links {
+    font-size: 14px;
+    line-height: 18px;
   }
 }
