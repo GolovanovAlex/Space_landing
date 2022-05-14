@@ -664,6 +664,17 @@ button {
     width: 46%;
     margin-left: 30px;
   }
+  .slider {
+    &__arrow--prev {
+      left: 25px;
+    }
+    &__arrow--next {
+      right: 25px;
+    }
+    &__box-item {
+      max-width: 50%;
+    }
+  }
 }
 
 // ---- ---- 1024 ---- ---- //

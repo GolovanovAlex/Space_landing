@@ -757,6 +757,16 @@ button {
     width: 46%;
     margin-left: 30px;
   }
+
+  .slider__arrow--prev {
+    left: 25px;
+  }
+  .slider__arrow--next {
+    right: 25px;
+  }
+  .slider__box-item {
+    max-width: 50%;
+  }
 }
 @media (max-width: 1024px) {
   .login {
