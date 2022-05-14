@@ -744,6 +744,11 @@ button {
   .special-services__btn--first {
     margin-bottom: 50px;
   }
+
+  .contact__info {
+    width: 46%;
+    margin-left: 30px;
+  }
 }
 @media (max-width: 1024px) {
   .login {
@@ -857,6 +862,9 @@ button {
     margin: 0 auto;
   }
 
+  .special-services {
+    padding-bottom: 0px;
+  }
   .special-services__inner {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -875,6 +883,27 @@ button {
   }
   .special-services__caption {
     margin-bottom: 160px;
+  }
+
+  .contact__inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0 auto;
+  }
+  .contact__box-text {
+    margin-bottom: 50px;
+  }
+  .contact__info {
+    width: 500px;
+    margin-left: 0px;
   }
 }
 @media (max-width: 620px) {
@@ -965,6 +994,26 @@ button {
     max-width: 500px;
     width: 100%;
   }
+
+  .contact__box {
+    width: 100%;
+    max-width: 500px;
+  }
+  .contact__box-text {
+    font-size: 20px;
+    line-height: 22px;
+  }
+  .contact__form-btn {
+    width: 100%;
+  }
+  .contact__info {
+    width: 100%;
+    max-width: 500px;
+  }
+  .contact__info-text {
+    font-size: 20px;
+    line-height: 22px;
+  }
 }
 @media (max-width: 500px) {
   .header {
@@ -1024,6 +1073,22 @@ button {
   }
   .stars__list-item:hover {
     font-size: 18px;
+  }
+
+  .contact__box-text {
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 20px;
+  }
+  .contact__form-input {
+    padding: 15px 0;
+  }
+  .contact__info-text {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .contact__info-img {
+    width: 100%;
   }
 }
 @media (max-width: 410px) {
@@ -1092,6 +1157,9 @@ button {
     padding: 20px 25px;
   }
 
+  .special {
+    padding-bottom: 50px;
+  }
   .special .special-services__list-item {
     font-size: 16px;
   }
