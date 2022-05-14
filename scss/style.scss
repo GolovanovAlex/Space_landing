@@ -658,6 +658,17 @@ button {
   .login {
     margin-right: 0;
   }
+  .spaceman {
+    background-position: left;
+    &__inner {
+      flex-direction: column;
+    }
+    &__content {
+      padding-top: 0;
+      margin-left: auto;
+      margin-top: -50px;
+    }
+  }
 }
 // ---- ---- 900 ---- ---- //
 @media (max-width: 900px) {
@@ -715,6 +726,18 @@ button {
     &__box svg {
       max-width: 100%;
       height: 90%;
+    }
+  }
+  .spaceman {
+    &__content {
+      margin-top: -40px;
+    }
+    &__text {
+      order: 2;
+    }
+    &__text + &__text {
+      margin-left: 10px;
+      order: 1;
     }
   }
 }
@@ -781,6 +804,18 @@ button {
     }
     &__list {
       display: block;
+    }
+  }
+  .spaceman {
+    &__content {
+      margin-top: -40px;
+    }
+    &__text {
+      order: 2;
+    }
+    &__text + &__text {
+      margin-left: 10px;
+      order: 1;
     }
   }
 }
@@ -857,7 +892,7 @@ button {
     font-size: 16px;
   }
   .header {
-    background-position: -900px;
+    background-position: -600px;
 
     &__title {
       font-size: 30px;
@@ -880,8 +915,8 @@ button {
     }
   }
   .title {
-    font-size: 33px;
-    line-height: 33px;
+    font-size: 30px;
+    line-height: 30px;
   }
 }
 

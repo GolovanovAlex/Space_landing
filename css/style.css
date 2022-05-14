@@ -741,6 +741,21 @@ button {
   .login {
     margin-right: 0;
   }
+
+  .spaceman {
+    background-position: left;
+  }
+  .spaceman__inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .spaceman__content {
+    padding-top: 0;
+    margin-left: auto;
+    margin-top: -50px;
+  }
 }
 @media (max-width: 900px) {
   .header {
@@ -804,6 +819,21 @@ button {
     max-width: 100%;
     height: 90%;
   }
+
+  .spaceman__content {
+    margin-top: -40px;
+  }
+  .spaceman__text {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .spaceman__text + .spaceman__text {
+    margin-left: 10px;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
 }
 @media (max-width: 620px) {
   .header {
@@ -862,6 +892,21 @@ button {
   }
   .stars__list {
     display: block;
+  }
+
+  .spaceman__content {
+    margin-top: -40px;
+  }
+  .spaceman__text {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .spaceman__text + .spaceman__text {
+    margin-left: 10px;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
   }
 }
 @media (max-width: 500px) {
@@ -930,7 +975,7 @@ button {
   }
 
   .header {
-    background-position: -900px;
+    background-position: -600px;
   }
   .header__title {
     font-size: 30px;
@@ -952,7 +997,7 @@ button {
   }
 
   .title {
-    font-size: 33px;
-    line-height: 33px;
+    font-size: 30px;
+    line-height: 30px;
   }
 }
