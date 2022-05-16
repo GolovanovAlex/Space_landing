@@ -569,12 +569,20 @@ button {
 .slider__inner {
   margin-bottom: 50px;
   border: 1px solid #fff;
-  padding: 100px 0;
+  padding: 75px 25px;
 }
 .slider__box {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .slider__box-img {
+  max-width: 850px;
+  height: 500px;
   margin: 0 auto;
 }
 .slider__description {
@@ -591,10 +599,10 @@ button {
   cursor: pointer;
 }
 .slider__arrow--prev {
-  left: 75px;
+  left: 15px;
 }
 .slider__arrow--next {
-  right: 75px;
+  right: 15px;
 }
 
 .contact {
@@ -763,9 +771,6 @@ button {
   }
   .slider__arrow--next {
     right: 25px;
-  }
-  .slider__box-item {
-    max-width: 50%;
   }
 }
 @media (max-width: 1024px) {

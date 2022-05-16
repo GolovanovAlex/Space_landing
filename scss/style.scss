@@ -519,13 +519,17 @@ button {
   &__inner {
     margin-bottom: 50px;
     border: 1px solid $color_main;
-    padding: 100px 0;
+    padding: 75px 25px;
   }
   &__box {
     position: relative;
+    display: flex;
+    align-items: center;
   }
 
   &__box-img {
+    max-width: 850px;
+    height: 500px;
     margin: 0 auto;
   }
   &__description {
@@ -542,11 +546,11 @@ button {
   cursor: pointer;
 
   &--prev {
-    left: 75px;
+    left: 15px;
   }
 
   &--next {
-    right: 75px;
+    right: 15px;
   }
 }
 .contact {
@@ -670,9 +674,6 @@ button {
     }
     &__arrow--next {
       right: 25px;
-    }
-    &__box-item {
-      max-width: 50%;
     }
   }
 }
