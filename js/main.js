@@ -1,6 +1,7 @@
 $(function () {
   $('.slider__box').slick({
     arrows: true,
+    fade: true,
     prevArrow:
       '<img src="images/icon/arrow_prev.svg" alt="arrow" class="slider__arrow slider__arrow--prev" />',
     nextArrow:
