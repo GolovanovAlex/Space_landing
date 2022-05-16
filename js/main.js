@@ -5,12 +5,13 @@ $(function () {
       '<img src="images/icon/arrow_prev.svg" alt="arrow" class="slider__arrow slider__arrow--prev" />',
     nextArrow:
       '<img src="images/icon/arrow_next.svg" alt="arrow" class="slider__arrow slider__arrow--next" />',
-    mobileFirst: true,
+
     responsive: [
       {
-        breakpoint: 901,
+        breakpoint: 621,
         settings: {
           arrows: false,
+          dots: true,
         },
       },
     ],

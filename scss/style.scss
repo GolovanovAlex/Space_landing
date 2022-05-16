@@ -518,12 +518,12 @@ button {
   margin-top: 75px;
   text-align: center;
   &__inner {
+    position: relative;
     margin-bottom: 50px;
     border: 1px solid $color_main;
     padding: 75px 25px;
   }
   &__box {
-    position: relative;
     display: flex;
     align-items: center;
   }
@@ -539,6 +539,29 @@ button {
     line-height: 30px;
   }
 }
+.slick-dots {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  top: 325px;
+  left: 0;
+  right: 0;
+  bottom: 0px;
+
+  button {
+    background-color: $color_main;
+    width: 10px;
+    height: 10px;
+    font-size: 0;
+    padding: 0;
+    border-radius: 50%;
+    margin: 0 10px;
+  }
+}
+.slick-active button {
+  background-color: $color_hover;
+}
+
 .slider__arrow {
   position: absolute;
   top: calc((100% - 68px) / 2);
@@ -821,7 +844,18 @@ button {
       margin-left: 0px;
     }
   }
+  .slider__box-img {
+    max-height: auto;
+  }
 }
+// ---- ---- 720 ---- ---- //
+
+@media (max-width: 720px) {
+  .slider__box-img {
+    max-height: 350px;
+  }
+}
+
 // ---- ---- 620 ---- ---- //
 @media (max-width: 620px) {
   .header {
@@ -971,16 +1005,12 @@ button {
     &__inner {
     }
     &__box-img {
-      height: 100%;
+      height: 300px;
     }
+
     &__description {
       font-size: 18px;
       line-height: 18px;
-    }
-  }
-  .slider {
-    &__box-img {
-      height: 300px;
     }
   }
 }
@@ -1072,6 +1102,9 @@ button {
       height: 250px;
     }
   }
+  .slick-dots {
+    top: 273px;
+  }
 }
 // ---- ---- 410 ---- ---- //
 @media (max-width: 410px) {
@@ -1113,27 +1146,17 @@ button {
   }
   .slider {
     &__inner {
-      padding: 25px 10px;
+      padding: 35px 10px;
     }
     &__box-img {
       max-width: 100%;
       height: 200px;
     }
   }
+  .slick-dots {
+    top: 205px;
+  }
 }
-// .slider {
-//   &__inner {
-//     padding: 25px 10px;
-//   }
-//   &__box-img {
-//     width: 100%;
-//     height: 150px;
-//   }
-//   &__description {
-//     font-size: 18px;
-//     line-height: 18px;
-//   }
-// }
 
 // ---- ---- 360 ---- ---- //
 @media (max-width: 360px) {
@@ -1200,7 +1223,7 @@ button {
       line-height: 18px;
     }
   }
+  .slick-dots {
+    top: 152px;
+  }
 }
-
-// ---- ---- media ---- ---- //
-// ---- ---- media ---- ---- //
