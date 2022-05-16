@@ -670,10 +670,10 @@ button {
   }
   .slider {
     &__arrow--prev {
-      left: 25px;
+      left: -10px;
     }
     &__arrow--next {
-      right: 25px;
+      right: -10px;
     }
   }
 }

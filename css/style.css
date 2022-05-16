@@ -767,10 +767,10 @@ button {
   }
 
   .slider__arrow--prev {
-    left: 25px;
+    left: -10px;
   }
   .slider__arrow--next {
-    right: 25px;
+    right: -10px;
   }
 }
 @media (max-width: 1024px) {
