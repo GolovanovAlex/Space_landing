@@ -163,13 +163,16 @@ button {
   padding: 0;
   position: relative;
   z-index: 20;
+
   span {
     display: block;
     position: relative;
     height: 2px;
     background-color: $color_main;
+    transition: all cubic-bezier(0.26, 0.1, 0.27, 1.55) 0.4s;
     &::before,
     &::after {
+      transition: all cubic-bezier(0.26, 0.1, 0.27, 1.55) 0.5s;
       content: '';
       position: absolute;
       left: 0;
@@ -184,6 +187,20 @@ button {
     }
     &::after {
       top: 12px;
+    }
+  }
+  &.active {
+    span {
+      transform: rotate(45deg);
+      top: 0;
+      &::before {
+        transform: rotate(90deg);
+        top: 0;
+      }
+      &::after {
+        transform: rotate(90deg);
+        top: 0;
+      }
     }
   }
 }

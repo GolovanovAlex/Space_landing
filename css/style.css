@@ -180,8 +180,12 @@ button {
   position: relative;
   height: 2px;
   background-color: #fff;
+  -webkit-transition: all cubic-bezier(0.26, 0.1, 0.27, 1.55) 0.4s;
+  transition: all cubic-bezier(0.26, 0.1, 0.27, 1.55) 0.4s;
 }
 .menu-burger span::before, .menu-burger span::after {
+  -webkit-transition: all cubic-bezier(0.26, 0.1, 0.27, 1.55) 0.5s;
+  transition: all cubic-bezier(0.26, 0.1, 0.27, 1.55) 0.5s;
   content: "";
   position: absolute;
   left: 0;
@@ -196,6 +200,21 @@ button {
 }
 .menu-burger span::after {
   top: 12px;
+}
+.menu-burger.active span {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: 0;
+}
+.menu-burger.active span::before {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  top: 0;
+}
+.menu-burger.active span::after {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  top: 0;
 }
 
 .phone {

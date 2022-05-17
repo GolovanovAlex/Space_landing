@@ -19,5 +19,6 @@ $(function () {
   });
   $('.menu-burger').on('click', function () {
     $('.menu__list').toggleClass('active');
+    $('.menu-burger').toggleClass('active');
   });
 });
