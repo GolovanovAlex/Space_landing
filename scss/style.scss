@@ -32,9 +32,6 @@ $color_red: #cb0e0e;
 $color_black: #010203;
 
 // ---- ---- **** ---- ---- //
-
-// ---- ---- **** ---- ---- //
-
 *,
 *::before,
 *::after {
@@ -685,6 +682,7 @@ button {
     }
   }
 }
+
 // ---- ---- 1150 ---- ---- //
 @media (max-width: 1150px) {
   .about {
@@ -718,9 +716,7 @@ button {
     }
   }
 }
-
 // ---- ---- 1024 ---- ---- //
-
 @media (max-width: 1024px) {
   .login {
     margin-right: 0;
@@ -866,13 +862,11 @@ button {
   }
 }
 // ---- ---- 720 ---- ---- //
-
 @media (max-width: 720px) {
   .slider__box-img {
     max-height: 350px;
   }
 }
-
 // ---- ---- 620 ---- ---- //
 @media (max-width: 620px) {
   .header {
@@ -1029,7 +1023,6 @@ button {
     }
   }
 }
-
 // ---- ---- 500 ---- ---- //
 @media (max-width: 500px) {
   .header {
@@ -1172,7 +1165,6 @@ button {
     top: 205px;
   }
 }
-
 // ---- ---- 360 ---- ---- //
 @media (max-width: 360px) {
   .phone {
