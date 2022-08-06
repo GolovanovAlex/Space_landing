@@ -43,7 +43,12 @@ $color_black: #010203;
   padding: 0px 10px;
   margin: 0 auto;
 }
-
+body {
+  color: $color_main;
+}
+button {
+  color: $color_main;
+}
 .header {
   background-image: url(../images/bg/bg_header.jpg);
   background-size: cover;
