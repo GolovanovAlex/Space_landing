@@ -12,7 +12,7 @@
 
 [Demo Link <br>![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://golovanovalex.github.io/Space_landing/)
 
-![mercedes01](readme/mercedes01.gif)
+![space01](readme/space.gif)
 
 ## Info
 
