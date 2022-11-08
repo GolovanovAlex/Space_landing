@@ -7,6 +7,7 @@
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 
 ![SASS](https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white)
+![SVG](https://img.shields.io/badge/SVG-%23ED760E.svg?style=for-the-badge&logo=SVG&logoColor=white)
 ![jQuery](https://img.shields.io/badge/jquery-%230769AD.svg?style=for-the-badge&logo=jquery&logoColor=white)
 ![Gulp](https://img.shields.io/badge/GULP-%23CF4647.svg?style=for-the-badge&logo=gulp&logoColor=white)
 
@@ -21,7 +22,7 @@
 Создано на основе ролика с YouTube канала [От 0 до 1](https://www.youtube.com/c/%D0%9E%D1%820%D0%B4%D0%BE1)
 
 Верстка полноценного сайта-лендинга. Работа с **HTML**, **CSS** и **JS**.  
-Использование препроцессинга **SASS**, библиотеки **JQuery**, библиотеки **fancyBox**, слайдера **Slick** и сборщика **Gulp**.  
+Использование препроцессинга **SASS**, библиотеки **JQuery**, слайдера **Slick** и сборщика **Gulp**, работа с **SVG**.  
 Пройдена валидация HTML и CSS, а так же производительность с помощью **PageSpeed Insights**.
 
 ---
